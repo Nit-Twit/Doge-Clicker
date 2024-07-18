@@ -1,22 +1,17 @@
 "use client";
 
-import Upgrades from "@/components/upgrades";
-import MiddlePanel from "@/components/middle";
-import RightPanel from "@/components/right-panel";
-import Image from "next/image";
-// import { useState, useRef } from "react";
-
-// function handleImageClick(e: React.MouseEvent<HTMLImageElement>) {
-//   console.log(e.target);
-//   e.target = "/images/dogeBark.png";
-// }
+import KeyInput from "@/components/apiCheck";
+import Game from "@/components/game";
+import MainMenu from "@/components/mainmenu";
+import { useState } from "react";
 
 export default function HomePage() {
+  const [page, setPage] = useState("betaTest1");
   return (
-    <div className="flex flex-row h-full">
-      <Upgrades></Upgrades>
-      <MiddlePanel></MiddlePanel>
-      <RightPanel></RightPanel>
+    <div className="flex flex-row h-full w-full">
+      {page === "game" && <Game />}
+      {page === "menu" && <MainMenu />}
+      {page === "betaTest1" && <KeyInput setPage={setPage} />}
     </div>
   );
 }

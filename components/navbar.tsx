@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <div
-      className={`flex items-center justify-start gap-2 text-2xl text-white border-t-[7px] border-black bg-gradient-to-r from-fuchsia-900 to-fuchsia-500 h-[12vh]`}
+      className={`flex items-center justify-start gap-2 text-2xl z-40 text-white border-t-[7px] border-black bg-gradient-to-r from-fuchsia-900 to-fuchsia-500 h-[12vh]`}
     >
       <Link className={`hover:bg-white hover:text-black px-4 cursor-pointer h-full items-center flex`} href="https://www.imakegamez.com">
         IMG Home
