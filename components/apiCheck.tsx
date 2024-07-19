@@ -17,7 +17,7 @@ const KeyInput = () => {
         Welcome to the first alpha test of Doge Clicker Remastered!<br />
         If you notice any bugs, please let me know ASAP.<br />
         Thank you for participating! :D<br /><br />
-        P.S. This build wasn't fully finished feature wise, so don't be surprised if you find a bug ;)
+        P.S. This build wasn&apos;t fully finished feature wise, so don&apos;t be surprised if you find a bug ;)
       </h1>
       <button onClick={() => {
         signIn("discord");
